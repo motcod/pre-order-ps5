@@ -19,7 +19,7 @@ const mailOptions = {
   text: "New stock",
 };
 
-const mailList = ["ori@ezracpa.co.il", "trigger@applet.ifttt.com"];
+const mailList = ["maw6293@gmail.com"];
 const urlNintedo = "https://www.bug.co.il/brand/nintendo-switch/redandblueversion11/"
 const urlPs5 = "https://www.bug.co.il/brand/ps5/ps5/console/digital";
 const addToCart = "button action primary tocart sprite";
