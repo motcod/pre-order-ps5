@@ -6,26 +6,22 @@ const transporter = nodemailer.createTransport(
   smtpTransport({
     service: "Gmail",
     auth: {
-      user: "nodemailermessengemessenge@gmail.com",
-      pass: "YourPass",
+      user: "maw6293@gmail.com",
+      pass: "D3ax8oQXCc",
     },
   })
 );
 // hashtag #preorder in subject for ifttt trigger
 const mailOptions = {
-  from: "nodemailermessengemessenge@gmail.com",
-  to: "ori@ezracpa.co.il",
-  subject: "#preorderPS5 kravitz open the pre-order of the PS5",
-  text: "kravitz open the pre-order",
+  from: "maw6293@gmail.com",
+  to: "maw6293@gmail.com",
+  subject: "#preorderPS5",
+  text: "New stock",
 };
 
 const mailList = ["ori@ezracpa.co.il", "trigger@applet.ifttt.com"];
-const urlNintedo =
-  "https://www.kravitz.co.il/10024224-%D7%A7%D7%95%D7%A0%D7%A1%D7%95%D7%9C%D7%94-ni" +
-  "ntendo-swtich-v1-1#";
-const urlPs5 =
-  "https://www.kravitz.co.il/10032968-%D7%A7%D7%95%D7%A0%D7%A1%D7%95%D7%9C%D7%94-so" +
-  "ny-ps5";
+const urlNintedo = "https://www.bug.co.il/brand/nintendo-switch/redandblueversion11/"
+const urlPs5 = "https://www.bug.co.il/brand/ps5/ps5/console/digital";
 const addToCart = "button action primary tocart sprite";
 
 async function makeGetRequest() {
