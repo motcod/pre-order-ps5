@@ -8,7 +8,7 @@ const transporter = nodemailer.createTransport(
     auth: {
       user: "maw6293@gmail.com",
       pass: "D3ax8oQXCc",
-    },
+    }, 
   })
 );
 // hashtag #preorder in subject for ifttt trigger
