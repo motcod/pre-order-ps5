@@ -34,7 +34,7 @@ const urlPs5 = "https://www.bug.co.il/brand/ps5/ps5/console/digital";
 const addToCart = "addToCart(this";
 
 async function makeGetRequest() {
-  let res = await axios.get(urlGame);
+  let res = await axios.get(urlPs5);
   if (res.status >= 200 && res.status < 300) {
     console.log(`status is ${res.statusText}, status number is ${res.status}`);
     if (res.data.toLowerCase().includes(addToCart.toLowerCase())) {
