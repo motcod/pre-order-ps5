@@ -29,12 +29,12 @@ const mailOptions = {
 };
 
 const mailList = ["maw6293@gmail.com"];
-const urlNintedo = "https://www.bug.co.il/brand/nintendo-switch/redandblueversion11/"
+const urlGame = "https://www.bug.co.il/brand/ps5/marvel/spider/man/miles/morales/ultimate/edition"
 const urlPs5 = "https://www.bug.co.il/brand/ps5/ps5/console/digital";
-const addToCart = "button action primary tocart sprite";
+const addToCart = "addToCart(this";
 
 async function makeGetRequest() {
-  let res = await axios.get(urlNintedo);
+  let res = await axios.get(urlGame);
   if (res.status >= 200 && res.status < 300) {
     console.log(`status is ${res.statusText}, status number is ${res.status}`);
     if (res.data.toLowerCase().includes(addToCart.toLowerCase())) {
