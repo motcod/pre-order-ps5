@@ -2,6 +2,15 @@ const axios = require("axios");
 const nodemailer = require("nodemailer");
 const smtpTransport = require("nodemailer-smtp-transport");
 
+const http = require('http');
+const port = process.env.PORT || 3000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  const msg = 'I am looking for your Playstation :)\n'
+  res.end(msg);
+});
+
 const transporter = nodemailer.createTransport(
   smtpTransport({
     service: "Gmail",
