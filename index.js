@@ -32,4 +32,4 @@ async function makeGetRequest() {
   }
 }
 
-setInterval(makeGetRequest, 50000);
+setInterval(makeGetRequest, 100000);
