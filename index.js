@@ -17,7 +17,8 @@ async function makeGetRequest() {
 
       // MSG
   
-      var xmlHttp = new XMLHttpRequest();
+      var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+	  var xmlHttp = new XMLHttpRequest();
 	  xmlHttp.open( "GET", theURL, false ); // false for synchronous request
       xmlHttp.send( null );
 	  
