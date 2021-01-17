@@ -8,7 +8,7 @@ const addToCart = "addToCart(this";
 const theURL = "https://api.telegram.org/bot1515740642:AAG6xmaFJGJnVvLWqY9NHzhV3KF0KjiLp9c/sendMessage?chat_id=-491433102&text='NEW STOCK'"
 
 async function makeGetRequest() {
-  let res = await axios.get(urlGame);
+  let res = await axios.get(urlPs5);
   if (res.status >= 200 && res.status < 300) {
     console.log(`status is ${res.statusText}, status number is ${res.status}`);
     if (res.data.toLowerCase().includes(addToCart.toLowerCase())) {
